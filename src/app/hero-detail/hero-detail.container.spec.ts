@@ -110,12 +110,6 @@ describe(HeroDetailContainerComponent.name, () => {
     resetLocationStub(locationStub);
   });
 
-  it('navigates to the previous page', () => {
-    container.goBack();
-
-    expect(locationStub.back).toHaveBeenCalledTimes(1);
-  });
-
   it('saves a hero', () => {
     container.save(blackWidow);
 
